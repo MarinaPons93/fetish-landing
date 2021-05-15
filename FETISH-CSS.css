@@ -134,7 +134,7 @@ a {
     display: grid;
     height: 100%;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 210px;
+    grid-template-rows: 200px;
     gap: 10px;
   }
   .tech-slideshow > div {
