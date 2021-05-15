@@ -11,15 +11,16 @@ body {
 }
 
 p {
-  font-family: EditorialNew-Light, Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-family: Founders-Grotesk-Regular, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
   margin: 0 auto;
 }
 
 a {
   font-family: Founders-Grotesk-Regular, Arial, Helvetica, sans-serif;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: black;
 }
 
@@ -56,17 +57,11 @@ a {
   display: grid;
   height: 100%;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 320px;
+  grid-template-rows: 390px;
   gap: 10px;
 }
-
 .logo-fetish {
   grid-column: span 6;
-}
-.carousel-work {
-  grid-column: span 6;
-  display: flex;
-  overflow: hidden;
 }
 .studio-description {
   grid-column: 1 / span 5;
@@ -81,97 +76,6 @@ a {
   grid-row: 4;
 }
 
-@media (min-width: 720px) {
-  .logo-fetish {
-    grid-column: span 6;
-  }
-  .carousel-work {
-    grid-column: span 6;
-  }
-  .studio-description {
-    grid-column: span 3;
-    grid-row: 3;
-  }
-  .instagram-footer {
-    grid-column: 5 / span 1;
-    grid-row: 3;
-  }
-  .email-footer {
-    grid-column: 6 / span 2;
-    grid-row: 3;
-  }
-}
-
-@media (min-width: 1020px) {
-  .logo-fetish {
-    grid-column: span 6;
-  }
-  .carousel-work {
-    grid-column: span 6;
-  }
-  .studio-description {
-    grid-column: span 2;
-    grid-row: 3;
-  }
-  .instagram-footer {
-    grid-column: 4 / span 1;
-    grid-row: 3;
-  }
-  .email-footer {
-    grid-column: 5 / span 2;
-    grid-row: 3;
-  }
-}
-
-/* SLIDE CAROUSEL */
-
-.carousel-images {
-  -webkit-animation: slide-img 5s ease infinite;
-}
-@-webkit-keyframes slide-img {
-  20% {
-    margin-left: 0px;
-  }
-  30% {
-    margin-left: -728px;
-  }
-  50% {
-    margin-left: -728px;
-  }
-  60% {
-    margin-left: -1456px;
-  }
-  70% {
-    margin-left: -1456px;
-  }
-  80% {
-    margin-left: -2184px;
-  }
-  90% {
-    margin-left: -2184px;
-  }
-}
-
-.carousel__viewport {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: scroll;
-  counter-reset: item;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-
-.carousel__slide {
-  position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-  counter-increment: item;
-}
-
 /* Hecho por Eric */
 .tech-slideshow > div {
   height: 100%;
@@ -179,7 +83,7 @@ a {
   position: absolute;
   top: 0px;
   left: 0;
-  height: 300%;
+  height: 350%;
   transform: translate3d(0, 0, 0);
 }
 
@@ -205,7 +109,7 @@ a {
   position: relative;
 }
 #slideset1 > * {
-  animation: 16s autoplay6 infinite linear;
+  animation: 14s autoplay6 infinite linear;
   position: absolute;
   top: 0;
   left: 0;
@@ -224,3 +128,114 @@ a {
   animation-delay: 12s;
 }
 /* Hecho por Eric */
+
+@media (min-width: 720px) {
+  .grid-container3 {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 400px;
+    gap: 10px;
+  }
+  .tech-slideshow > div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 360%;
+    transform: translate3d(0, 0, 0);
+  }
+  .logo-fetish {
+    grid-column: span 6;
+  }
+  .carousel-work {
+    grid-column: span 6;
+  }
+  .studio-description {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+  .instagram-footer {
+    grid-column: 4 / span 1;
+    grid-row: 3;
+  }
+  .email-footer {
+    grid-column: 5 / span 2;
+    grid-row: 3;
+  }
+}
+
+@media (min-width: 1020px) {
+  .grid-container3 {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 400px;
+    gap: 10px;
+  }
+  .tech-slideshow > div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 360%;
+    transform: translate3d(0, 0, 0);
+  }
+  .logo-fetish {
+    grid-column: span 6;
+  }
+  .carousel-work {
+    grid-column: span 6;
+  }
+  .studio-description {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+  .instagram-footer {
+    grid-column: 4 / span 1;
+    grid-row: 3;
+  }
+  .email-footer {
+    grid-column: 5 / span 2;
+    grid-row: 3;
+  }
+}
+
+@media (min-width: 1340px) {
+  .grid-container3 {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 340px;
+    gap: 10px;
+  }
+  .tech-slideshow > div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 320%;
+    transform: translate3d(0, 0, 0);
+  }
+  .logo-fetish {
+    grid-column: span 6;
+  }
+  .carousel-work {
+    grid-column: span 6;
+  }
+  .studio-description {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+  .instagram-footer {
+    grid-column: 4 / span 1;
+    grid-row: 3;
+  }
+  .email-footer {
+    grid-column: 5 / span 2;
+    grid-row: 3;
+  }
+}
