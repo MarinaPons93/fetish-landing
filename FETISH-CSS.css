@@ -38,13 +38,28 @@ a {
 
 /* GRID CONTAINERS & RESPONSIVE */
 
-.grid-container {
+.grid-container1 {
   display: grid;
-  height: 100vh;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto 1fr auto auto auto;
+  height: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
   gap: 10px;
 }
+.grid-container2 {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
+.grid-container3 {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 320px;
+  gap: 10px;
+}
+
 .logo-fetish {
   grid-column: span 6;
 }
@@ -111,7 +126,7 @@ a {
 /* SLIDE CAROUSEL */
 
 .carousel-images {
-  -webkit-animation: slide-img 18s ease infinite;
+  -webkit-animation: slide-img 5s ease infinite;
 }
 @-webkit-keyframes slide-img {
   20% {
@@ -136,3 +151,76 @@ a {
     margin-left: -2184px;
   }
 }
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  counter-increment: item;
+}
+
+/* Hecho por Eric */
+.tech-slideshow > div {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 300%;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes autoplay6 {
+  0% {
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  37.33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#slideset1 {
+  height: 10em;
+  position: relative;
+}
+#slideset1 > * {
+  animation: 16s autoplay6 infinite linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#slideset1 > *:nth-child(1) {
+  animation-delay: 0s;
+}
+#slideset1 > *:nth-child(2) {
+  animation-delay: 4s;
+}
+#slideset1 > *:nth-child(3) {
+  animation-delay: 8s;
+}
+#slideset1 > *:nth-child(4) {
+  animation-delay: 12s;
+}
+/* Hecho por Eric */
