@@ -129,6 +129,43 @@ a {
 }
 /* Hecho por Eric */
 
+@media (min-width: 375px) {
+  .grid-container3 {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 210px;
+    gap: 10px;
+  }
+  .tech-slideshow > div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 230%;
+    transform: translate3d(0, 0, 0);
+  }
+  .logo-fetish {
+    grid-column: span 6;
+  }
+  .carousel-work {
+    grid-column: span 6;
+  }
+  .studio-description {
+    grid-column: 1 / span 5;
+    grid-row: 3;
+  }
+  .instagram-footer {
+    grid-column: 1 / span 1;
+    grid-row: 4;
+  }
+  .email-footer {
+    grid-column: 3 / span 2;
+    grid-row: 4;
+  }
+}
+
 @media (min-width: 720px) {
   .grid-container3 {
     display: grid;
