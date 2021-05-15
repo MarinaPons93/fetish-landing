@@ -76,7 +76,6 @@ a {
   grid-row: 4;
 }
 
-/* Hecho por Eric */
 .tech-slideshow > div {
   height: 100%;
   width: 100%;
@@ -127,7 +126,6 @@ a {
 #slideset1 > *:nth-child(4) {
   animation-delay: 12s;
 }
-/* Hecho por Eric */
 
 @media (min-width: 375px) {
   .grid-container3 {
