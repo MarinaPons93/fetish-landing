@@ -56,7 +56,8 @@ a {
 .principal-grid-container {
   position: relative;
   height: 100vh;
-  -webkit-animation: fade-in 3s ease, slide-in 3s ease;
+  animation: fade-in 3s ease;
+  -webkit-animation: fade-in 3s ease;
 }
 .grid-container1 {
   display: grid;
