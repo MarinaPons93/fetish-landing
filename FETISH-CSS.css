@@ -37,6 +37,8 @@ a {
 .principal-grid-container {
   position: relative;
   height: 100vh;
+  animation: fade-in 3s ease, slide-in 3s ease;
+  -webkit-animation: fade-in 3s ease, slide-in 3s ease;
 }
 .grid-container1 {
   display: grid;
@@ -228,6 +230,23 @@ a {
 }
 
 /* Animacion */
+@keyframes slide-in {
+  0% {
+    top: 20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes autoplay6 {
   0% {
     opacity: 0;
