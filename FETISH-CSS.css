@@ -13,6 +13,7 @@ p {
   margin: 0 auto;
 }
 
+/* Link & HOVER LINK*/
 a {
   font-family: Founders-Grotesk-Regular, Arial, Helvetica, sans-serif;
   text-decoration: none;
@@ -55,7 +56,6 @@ a {
 .principal-grid-container {
   position: relative;
   height: 100vh;
-  animation: fade-in 3s ease, slide-in 3s ease;
   -webkit-animation: fade-in 3s ease, slide-in 3s ease;
 }
 .grid-container1 {
