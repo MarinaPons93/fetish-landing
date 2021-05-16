@@ -1,6 +1,3 @@
-body {
-}
-
 /* STYLE FONTS */
 @font-face {
   font-family: EditorialNew-Light;
@@ -11,7 +8,7 @@ body {
 
 p {
   font-family: Founders-Grotesk-Regular, Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   margin: 0 auto;
 }
@@ -19,7 +16,7 @@ p {
 a {
   font-family: Founders-Grotesk-Regular, Arial, Helvetica, sans-serif;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: black;
 }
 
@@ -51,7 +48,7 @@ a {
 }
 .grid-container2 {
   display: grid;
-  height: 55vh;
+  height: 50vh;
   width: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
@@ -86,7 +83,7 @@ a {
   }
 
   .tech-slideshow > div {
-    height: 55vh;
+    height: 50vh;
     width: 100%;
     position: absolute;
     top: 0px;
@@ -135,11 +132,14 @@ a {
 }
 
 @media (min-width: 1020px) {
+  body {
+    margin: 15px;
+  }
   .logo-fetish {
     grid-column: span 6;
   }
   .studio-description {
-    grid-column: 1 / span 5;
+    grid-column: 1 / span 4;
     grid-row: 3;
   }
   .instagram-footer {
@@ -180,11 +180,14 @@ a {
 }
 
 @media (min-width: 1340px) {
+  body {
+    margin: 15px;
+  }
   .logo-fetish {
     grid-column: span 6;
   }
   .studio-description {
-    grid-column: 1 / span 5;
+    grid-column: 1 / span 4;
     grid-row: 3;
   }
   .instagram-footer {
